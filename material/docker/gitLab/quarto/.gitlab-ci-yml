@@ -1,0 +1,14 @@
+stages:
+  - build
+
+ausgabe_1:
+  stage: build
+  image: quarto-git:1.0
+  script: 
+    - echo "Ich bin die erste Ausgabe"
+    - ls -lah
+    - sleep 10
+    - quarto render --to pdf
+  artifacts:
+    paths:
+      - "_book/*pdf"

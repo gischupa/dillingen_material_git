@@ -13,6 +13,6 @@ format:
     theme: cosmo
   pdf:
     documentclass: scrreprt
-
+    lang: de
 
 
